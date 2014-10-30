@@ -155,8 +155,11 @@
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.10.1</version>
         </plugin>
-        <!-- SONARTYPE for code coverage and quality? <plugin> <groupId>org.codehaus.mojo</groupId> 
-          <artifactId>sonar-maven-plugin</artifactId> <version>2.4</version> </plugin> -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>2.4</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -310,7 +313,7 @@
               <report>project-team</report>
               <report>mailing-list</report>
               <report>cim</report>
-              <!--<report>issue-tracking</report> -->
+              <report>issue-tracking</report>
               <report>license</report>
               <report>scm</report>
             </reports>
