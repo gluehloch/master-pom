@@ -236,14 +236,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <!-- Currently i do not work behind a proxy. <configuration> <systemProperties> 
+        <!-- Currently i do not work behind a proxy. AXIS has some problems if this properties are set, but are empty.
+          <configuration> <systemProperties> 
           <property> <name>http.offline</name> <name>${http.offline}</name> </property> 
           <property> <name>http.proxyActive</name> <value>${http.Active}</value> </property> 
           <property> <name>http.proxyHost</name> <value>${http.proxyHost}</value> </property> 
           <property> <name>http.proxyPort</name> <value>${http.proxyPort}</value> </property> 
           <property> <name>http.proxyUser</name> <value>${http.proxyUser}</value> </property> 
           <property> <name>http.proxyPassword</name> <value>${http.proxyPassword}</value> 
-          </property> </systemProperties> </configuration> -->
+          </property> </systemProperties>
+          </configuration> -->
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -277,7 +279,7 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ftp</artifactId>
-        <version>2.2</version>
+        <version>2.7</version>
       </extension>
     </extensions>
   </build>
