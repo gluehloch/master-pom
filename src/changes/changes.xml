@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Change Notes</title>
+    <author email="andre.winkler@web.de">Andre Winkler</author>
+  </properties>
+  <body>
+
+    <release version="awtools master pom 1" date="2014-11-15"
+      description="Start">
+      <action dev="andrewinkler" type="add" date="2014-11-15">
+        Starting the master POM with version 1.
+      </action>
+    </release>
+
+  </body>
+  <footer>
+    <legal>
+      Copyright (c) @year@ The 'betoffice-testutils' Project.
+    </legal>
+  </footer>
+</document>
