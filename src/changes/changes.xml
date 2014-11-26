@@ -6,6 +6,14 @@
   </properties>
   <body>
 
+    <release version="awtools master pom 2" date="2014-11-26"
+      description="Rewind">
+      <action dev="andrewinkler" type="fix" date="2014-11-26">
+        Removed in version 1, readded in version 2:
+        project.build.sourceEncoding UTF-8 project.build.sourceEncoding.
+      </action>
+    </release>
+
     <release version="awtools master pom 1" date="2014-11-15"
       description="Start">
       <action dev="andrewinkler" type="add" date="2014-11-15">
