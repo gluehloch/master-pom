@@ -69,7 +69,7 @@
     <repository>
       <id>awtools</id>
       <name>Andre Winklers AWTools Repository</name>
-      <url>http://maven2.gluehloch.de</url>
+      <url>http://maven.gluehloch.de/repository</url>
     </repository>
     <repository>
       <id>Hibernate</id>

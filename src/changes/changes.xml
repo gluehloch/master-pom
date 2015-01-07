@@ -12,6 +12,9 @@
         Removed in version 1, readded in version 2:
         project.build.sourceEncoding UTF-8 project.build.sourceEncoding.
       </action>
+      <action dev="andrewinkler" type="update" date="2015-01-07">
+        New Maven repository URL for awtools projects: maven.gluehloch.de/repository.
+      </action>
     </release>
 
     <release version="awtools master pom 1" date="2014-11-15"
