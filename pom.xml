@@ -427,6 +427,10 @@
       <name>Gluehloch Snapshot Repository</name>
       <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
     </snapshotRepository>
+    <site>
+      <id>gluehloch-repository</id>
+      <url>scp://maven.gluehloch.de/var/www/projects.gluehloch/pom/master-pom</url>
+    </site>
   </distributionManagement>
 
   <properties>
