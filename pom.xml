@@ -425,7 +425,7 @@
     <snapshotRepository>
       <id>gluehloch-repository-snap</id>
       <name>Gluehloch Snapshot Repository</name>
-      <url>ftp://gluehloch.de/www/maven2-snap</url>
+      <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
     </snapshotRepository>
   </distributionManagement>
 
