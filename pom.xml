@@ -32,7 +32,7 @@
     <developerConnection>
       scm:git:ssh@github.com:gluehloch/master-pom.git
     </developerConnection>
-    <url>https://sourceforge.net/p/betoffice/_list/git</url>
+    <url>https://github.com/gluehloch/master-pom</url>
   </scm>
 
   <repositories>
