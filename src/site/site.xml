@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="AWTools Basic">
   <bannerLeft>
-    <name>AWTools</name>
+    <name>AWTools | Master POM</name>
     <href>http://www.gluehloch.de/</href>
   </bannerLeft>
   <!--
@@ -28,7 +28,7 @@
 
     <menu name="Master POM">
       <item name="instruction leaflet" href="index.html"/>
-      <item name="APT Format" href="summary.html"/>
+      <item name="APT Format" href="example_apt.html"/>
     </menu>
     <!-- http://maven.apache.org/images/logos/maven-brewed.png -->
     <menu ref="reports" />
