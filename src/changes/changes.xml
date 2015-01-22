@@ -6,6 +6,13 @@
   </properties>
   <body>
 
+    <release version="awtools master pom 3" date="2015-01-21"
+      description="Add">
+      <action dev="andrewinkler" type="add" date="2015-01-21">
+        Added repository location.
+      </action>
+    </release>
+
     <release version="awtools master pom 2" date="2015-01-12"
       description="Rewind">
       <action dev="andrewinkler" type="fix" date="2014-11-26">

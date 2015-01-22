@@ -5,7 +5,7 @@
 
   <groupId>de.awtools</groupId>
   <artifactId>master-pom</artifactId>
-  <version>2</version>
+  <version>3</version>
   <name>AWTools master POM</name>
   <packaging>pom</packaging>
 
@@ -67,15 +67,38 @@
       <url>http://snapshots.repository.codehaus.org</url>
     </repository>
     <repository>
-      <id>awtools</id>
-      <name>Andre Winklers AWTools Repository</name>
-      <url>http://maven.gluehloch.de/repository</url>
-    </repository>
-    <repository>
       <id>Hibernate</id>
       <name>Hibernate JBoss Repository</name>
       <!-- <url>http://repository.jboss.org/maven2</url> -->
       <url>http://repository.jboss.org/nexus/content/groups/public</url>
+    </repository>
+    
+    <!-- AWTools | Gluehloch | Betoffice Repository -->
+    <repository>
+      <id>awtools</id>
+      <name>AWTools Repository</name>
+      <url>http://maven.gluehloch.de/repository</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>awtools-snap</id>
+      <name>AWTools Snapshot Repository</name>
+      <url>http://maven-snap.gluehloch.de/repository</url>
+      <releases>
+        <enabled>false</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
     </repository>
   </repositories>
 
