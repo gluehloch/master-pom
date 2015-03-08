@@ -11,6 +11,9 @@
       <action dev="andrewinkler" type="add" date="2015-01-21">
         Added repository location.
       </action>
+      <action dev="andrewinkler" type="add" date="2015-03-08">
+        Site description.
+      </action>
     </release>
 
     <release version="awtools master pom 2" date="2015-01-12"

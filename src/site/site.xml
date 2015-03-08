@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="AWTools Basic">
+<project name="Master POM">
   <bannerLeft>
     <name>AWTools | Master POM</name>
     <href>http://www.gluehloch.de/</href>
   </bannerLeft>
-  <!--
-  <bannerRight>
-    <name>Powered by Maven</name>
-    <src>http://maven.apache.org/images/apache-maven/project.png</src>
-  </bannerRight>
-   -->
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
@@ -23,7 +17,7 @@
       <item name="Maven" href="http://maven.apache.org/"/>
     </links>
     <head>
-      <meta name="project" content="AWTools Basic"/>
+      <meta name="project" content="Master POM"/>
     </head>
 
     <menu name="Master POM">
