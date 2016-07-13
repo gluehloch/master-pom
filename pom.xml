@@ -5,7 +5,7 @@
 
   <groupId>de.awtools</groupId>
   <artifactId>master-pom</artifactId>
-  <version>3</version>
+  <version>3-SNAPSHOT</version>
   <name>AWTools master POM</name>
   <packaging>pom</packaging>
 
@@ -460,7 +460,7 @@
     <!-- Den Eintrag 'project.build.sourceEncoding' NICHT loeschen. Er wird irgendwo verwendet!? -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <compiler.encoding>UTF-8</compiler.encoding>
-    <compiler.version>1.7</compiler.version>
+    <compiler.version>1.8</compiler.version>
   </properties>
 
 </project>
