@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
@@ -38,6 +39,11 @@
 
   <repositories>
     <repository>
+      <id>Maven2-Repository</id>
+      <name>Ibiblio-Repository</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+    <repository>
       <id>Ibiblio-Repository</id>
       <name>Ibiblio-Repository</name>
       <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
@@ -52,11 +58,14 @@
       <name>SUN-Repository</name>
       <url>http://download.java.net/maven/2</url>
     </repository>
+    <!--
     <repository>
       <id>Fest-Google-Repository</id>
       <name>Fest-Google-Repository</name>
       <url>http://fest.googlecode.com/svn/trunk/fest/m2/repository</url>
     </repository>
+    -->
+    <!--
     <repository>
       <id>Fest-Codehaus-Repository</id>
       <name>Fest-Codehaus-Repository</name>
@@ -67,11 +76,23 @@
       <name>Codehaus-Repository</name>
       <url>http://snapshots.repository.codehaus.org</url>
     </repository>
+    -->
     <repository>
       <id>Hibernate</id>
       <name>Hibernate JBoss Repository</name>
       <!-- <url>http://repository.jboss.org/maven2</url> -->
       <url>http://repository.jboss.org/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>jboss</id>
+      <name>JBoss Maven2 repository</name>
+      <url>http://repository.jboss.com/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
     </repository>
     
     <!-- AWTools | Gluehloch | Betoffice Repository -->
@@ -172,7 +193,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.4</version>
+          <version>3.5.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
