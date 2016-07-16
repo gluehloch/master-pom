@@ -16,11 +16,6 @@
       <item name="AWTools" href="http://www.gluehloch.de"/>
       <item name="Maven" href="http://maven.apache.org/"/>
     </links>
-    <!-- 
-    <head>
-      <meta name="project" content="Master POM">Hallo</meta>
-    </head>
-     -->
 
     <menu name="Master POM">
       <item name="instruction leaflet" href="index.html"/>
