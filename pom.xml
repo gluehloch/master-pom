@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
@@ -37,6 +39,11 @@
 
   <repositories>
     <repository>
+      <id>Maven2-Repository</id>
+      <name>Ibiblio-Repository</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+    </repository>
+    <repository>
       <id>Ibiblio-Repository</id>
       <name>Ibiblio-Repository</name>
       <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
@@ -52,25 +59,21 @@
       <url>http://download.java.net/maven/2</url>
     </repository>
     <repository>
-      <id>Fest-Google-Repository</id>
-      <name>Fest-Google-Repository</name>
-      <url>http://fest.googlecode.com/svn/trunk/fest/m2/repository</url>
-    </repository>
-    <repository>
-      <id>Fest-Codehaus-Repository</id>
-      <name>Fest-Codehaus-Repository</name>
-      <url>http://svn.codehaus.org/fest/m2/repo</url>
-    </repository>
-    <repository>
-      <id>Codehaus-Repository</id>
-      <name>Codehaus-Repository</name>
-      <url>http://snapshots.repository.codehaus.org</url>
-    </repository>
-    <repository>
       <id>Hibernate</id>
       <name>Hibernate JBoss Repository</name>
       <!-- <url>http://repository.jboss.org/maven2</url> -->
       <url>http://repository.jboss.org/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>jboss</id>
+      <name>JBoss Maven2 repository</name>
+      <url>http://repository.jboss.com/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
     </repository>
     
     <!-- AWTools | Gluehloch | Betoffice Repository -->
@@ -111,47 +114,47 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.2</version>
+          <version>3.5.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>2.5</version>
+          <version>3.0.2</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.17</version>
+          <version>2.19.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-plugin</artifactId>
-          <version>1.9.2</version>
+          <version>1.9.5</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.5</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>2.7</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>cobertura-maven-plugin</artifactId>
           <version>2.6</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>cobertura-maven-plugin</artifactId>
+          <version>2.7</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.2</version>
+          <version>3.6</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>2.9</version>
+          <version>2.10</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -161,22 +164,22 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>2.7</version>
+          <version>2.9</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jxr-plugin</artifactId>
-          <version>2.2</version>
+          <version>2.5</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.4</version>
+          <version>3.5.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>2.10.1</version>
+          <version>2.10.4</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -184,9 +187,9 @@
           <version>2.8.2</version>
         </plugin>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
+          <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
-          <version>2.4</version>
+          <version>3.0.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -251,6 +254,7 @@
               <goal>attach-descriptor</goal>
             </goals>
           </execution>
+          <!-- TODO Disabled auto site generatrion with deployment
           <execution>
             <id>make-site</id>
             <phase>deploy</phase>
@@ -258,6 +262,7 @@
               <goal>site</goal>
             </goals>
           </execution>
+          -->
         </executions>
         <configuration>
           <inputEncoding>${compiler.encoding}</inputEncoding>
@@ -460,7 +465,7 @@
     <!-- Den Eintrag 'project.build.sourceEncoding' NICHT loeschen. Er wird irgendwo verwendet!? -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <compiler.encoding>UTF-8</compiler.encoding>
-    <compiler.version>1.7</compiler.version>
+    <compiler.version>1.8</compiler.version>
   </properties>
 
 </project>
