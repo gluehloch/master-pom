@@ -6,7 +6,7 @@
   </properties>
   <body>
 
-    <release version="awtools master pom 3" date="2016-??-??"
+    <release version="awtools master pom 3" date="2016-07-26"
       description="Add">
       <action dev="andrewinkler" type="update" date="2016-07-13">
         Java 8 is here.

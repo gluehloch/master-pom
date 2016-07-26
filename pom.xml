@@ -7,7 +7,7 @@
 
   <groupId>de.awtools</groupId>
   <artifactId>master-pom</artifactId>
-  <version>3-SNAPSHOT</version>
+  <version>3</version>
   <name>AWTools master POM</name>
   <packaging>pom</packaging>
 
