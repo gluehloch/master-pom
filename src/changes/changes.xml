@@ -9,13 +9,40 @@
     <release version="awtools master pom 4" date="2017-??-??"
       description="Update">
       <action dev="andrewinkler" type="update" date="2017-10-21">
-        Maven Wagon SSH update to 3.0.0<br/>
-        Maven Wagon FTP update to 3.0.0<br/>
-        Maven Compiler Plugin update to 3.7.0<br/>
-        Maven Surefire Plugin update to 2.20.1<br/>
-        Maven Assmbly Plugin update to 3.1.0<br/>
-        Maven Resource Plugin update to 3.0.2<br/>
-        Maven PMD Plugin update to 3.8<br/>
+        Maven Wagon SSH update to 3.0.0
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Wagon FTP update to 3.0.0
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Compiler Plugin update to 3.7.0
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Surefire Plugin update to 2.20.1
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Assmbly Plugin update to 3.1.0
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Resource Plugin update to 3.0.2
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Dependency Plugin update to 3.0.2
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven PMD Plugin update to 3.8
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Surefire Report Plugin update to 2.20.1
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Site Plugin update to 3.6
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Javadoc Plguin update to 3.0.0-M1
+      </action>
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Sonar Plugin update to 3.3.0.603
       </action>
     </release>
 
