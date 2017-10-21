@@ -5,6 +5,13 @@
     <author email="andre.winkler@web.de">Andre Winkler</author>
   </properties>
   <body>
+    <!-- Under development -->
+    <release version="awtools master pom 4" date="2017-??-??"
+      description="Update">
+      <action dev="andrewinkler" type="update" date="2017-10-21">
+        Maven Wagon SSH update to 3.0.0.
+      </action>
+    </release>
 
     <release version="awtools master pom 3" date="2016-07-26"
       description="Add">
