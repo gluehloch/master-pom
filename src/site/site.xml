@@ -9,7 +9,6 @@
     <artifactId>maven-fluido-skin</artifactId>
     <version>1.5</version>
   </skin>
-
   <publishDate format="dd MMM yyyy" />
   <body>
     <links>
