@@ -6,10 +6,12 @@
   </properties>
   <body>
     <!-- Under development -->
-    <release version="awtools master pom 5" date="2018-??-??"
+    
+    <!-- Released -->
+    <release version="awtools master pom 5" date="2018-03-30"
       description="Update">
       <action dev="andrewinkler" type="update" date="2018-03-04">
-        Some updates....
+        Some updates of several maven-plugins.
       </action>
     </release>
 
