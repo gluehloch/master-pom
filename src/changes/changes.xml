@@ -6,6 +6,15 @@
   </properties>
   <body>
     <!-- Under development -->
+    <release version="awtools master pom 6-java10" date="2018-08-07"
+      description="Update">
+      <action dev="andrewinkler" type="update" date="2018-08-07">
+        maven-compiler-plugin to 3.8.0.
+      </action>
+      <action dev="andrewinkler" type="update" date="2018-08-07">
+        maven-surefire-plugin to 2.22.0.
+      </action>
+    </release>
     
     <!-- Released -->
     <release version="awtools master pom 5" date="2018-03-30"
