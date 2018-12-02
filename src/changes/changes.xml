@@ -5,8 +5,8 @@
     <author email="andre.winkler@web.de">Andre Winkler</author>
   </properties>
   <body>
-    <!-- Under development -->
-    <release version="awtools master pom 6-java10" date="2018-08-07"
+    <!-- Released -->
+    <release version="awtools master pom 6-java10" date="2018-12-02"
       description="Java 10">
       <action dev="andrewinkler" type="update" date="2018-08-07">
         maven-compiler-plugin to 3.8.0.
