@@ -12,7 +12,7 @@
         maven-compiler-plugin to 3.8.0.
       </action>
       <action dev="andrewinkler" type="update" date="2018-08-07">
-        maven-surefire-plugin to 2.22.0.
+        maven-surefire-plugin to 2.22.1.
       </action>
       <action dev="andrewinkler" type="update" date="2018-08-09">
         maven-jar-plugin to 3.1.0 |
