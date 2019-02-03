@@ -7,3 +7,6 @@ The master POM without dependencies.
  * Java 10 (JDK 10 compiler and all dependencies like code coverage)
 
 And now build by TRAVIS.
+
+JUST DO IT!
+
