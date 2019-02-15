@@ -6,7 +6,7 @@
 	</properties>
 	<body>
 		<!-- Under construction -->
-		<release version="awtools master pom 7-jdk11"
+		<release version="awtools master pom 7-java11"
 			date="2019-02-15">
             <action dev="andrewinkler" type="update" date="2019-02-15"
                 Update to JDK 11.
