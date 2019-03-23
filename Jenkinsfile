@@ -19,8 +19,9 @@ pipeline {
                 echo 'Start build...'
                 sh 'node  -v'
                 sh 'npm -v'
-                sh 'java -version'
-                sh 'javac -version'
+                sh 'java --version'
+                sh 'javac --version'
+                sh 'mvn --version'
                 sh 'mvn clean install'
 
                 sh 'mvn --settings /var/jenkins_home/.m2/settings.xml deploy'
