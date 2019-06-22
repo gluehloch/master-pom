@@ -7,7 +7,7 @@
 
   <groupId>de.awtools</groupId>
   <artifactId>master-pom</artifactId>
-  <version>7-java11</version>
+  <version>8-java11</version>
   <name>AWTools master POM</name>
   <packaging>pom</packaging>
 
@@ -43,13 +43,6 @@
       <name>Ibiblio-Repository</name>
       <url>https://repo.maven.apache.org/maven2/</url>
     </repository>
-  <!--   
-    <repository>
-      <id>Ibiblio-Repository</id>
-      <name>Ibiblio-Repository</name>
-      <url>http://mirrors.ibiblio.org/pub/mirrors/maven2</url>
-    </repository>
-  -->
     <repository>
       <id>Apache-Maven-Repository</id>
       <name>Apache Maven Repository</name>
@@ -77,7 +70,7 @@
     <repository>
       <id>awtools</id>
       <name>AWTools Repository</name>
-      <url>http://maven.gluehloch.de/repository</url>
+      <url>https://maven.gluehloch.de/repository</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -88,7 +81,7 @@
     <repository>
       <id>awtools-snap</id>
       <name>AWTools Snapshot Repository</name>
-      <url>http://maven-snap.gluehloch.de/repository</url>
+      <url>https://maven-snap.gluehloch.de/repository</url>
       <releases>
         <enabled>false</enabled>
         <updatePolicy>always</updatePolicy>
@@ -111,12 +104,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>3.8.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.2</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -126,12 +119,12 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-plugin</artifactId>
-          <version>1.10.0</version>
+          <version>1.11.2</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.1.0</version>
+          <version>3.1.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -146,7 +139,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.10.0</version>
+          <version>3.12.0</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -172,7 +165,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.1.0</version>
         </plugin>
         <!-- TODO Ist das noch on vogue? -->
         <plugin>
@@ -336,15 +329,17 @@
     </plugins>
 
     <extensions>
+        <!--
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ftp</artifactId>
         <version>3.2.0</version>
       </extension>
+      -->
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ssh</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.3</version>
       </extension>
     </extensions>
   </build>

@@ -7,7 +7,14 @@
 	<body>
 		<!-- Under construction -->
 		<release version="awtools master pom 7-java11"
-			date="2019-03-22">
+			date="2019-03-22" description="JDK 11">
+            <action dev="andrewinkler" type="update" date="2019-02-15">
+                SSH Wagon update to 3.3.3. Minor updates of other dependencies.
+            </action>
+		</release>
+
+		<release version="awtools master pom 7-java11"
+			date="2019-03-22" description="JDK 11">
             <action dev="andrewinkler" type="update" date="2019-02-15">
                 Update to JDK 11.
             </action>
