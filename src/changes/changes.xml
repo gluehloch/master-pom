@@ -6,6 +6,13 @@
 	</properties>
 	<body>
 		<!-- Under construction -->
+		<release version="awtools master pom 9-java14"
+			date="2020-05-30" description="JDK 14">
+            <action dev="andrewinkler" type="update" date="2020-05-30">
+                Some updates. And moving to JDK 14.
+            </action>
+		</release>
+
 		<release version="awtools master pom 8-java11"
 			date="2019-03-22" description="JDK 11">
             <action dev="andrewinkler" type="update" date="2019-02-15">
