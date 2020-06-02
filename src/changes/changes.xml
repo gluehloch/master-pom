@@ -8,7 +8,7 @@
 		<!-- Under construction -->
 		
 		<!-- Released -->
-		<release version="awtools master pom 8-java11"
+		<release version="awtools master pom 8.1-java11"
 			date="2020-06-02" description="JDK 11">
             <action dev="andrewinkler" type="update" date="2020-06-02">
                 Maven-Compiler-Plugin: Set compiler version.
