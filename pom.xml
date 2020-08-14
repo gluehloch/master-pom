@@ -1,490 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.awtools</groupId>
-  <artifactId>master-pom</artifactId>
-  <version>9-java14</version>
-  <name>AWTools master POM</name>
-  <packaging>pom</packaging>
+    <groupId>de.awtools</groupId>
+    <artifactId>master-pom</artifactId>
+    <version>9-java14</version>
+    <name>AWTools master POM</name>
+    <packaging>pom</packaging>
 
-  <description>
-    The Maven master POM for my Maven projects without dependencies.
-  </description>
+    <description>
+        The Maven master POM for my Maven projects without dependencies.
+    </description>
 
-  <url>https://github.com/gluehloch/master-pom</url>
-  <inceptionYear>2014</inceptionYear>
-
-  <licenses>
-    <license>
-      <name>Apache License 2.0</name>
-      <url>http://www.apache.org/licenses/</url>
-      <distribution>repo</distribution>
-      <comments>A business-friendly OSS license</comments>
-    </license>
-  </licenses>
-
-  <scm>
-    <connection>
-      scm:git:ssh@github.com:gluehloch/master-pom.git
-    </connection>
-    <developerConnection>
-      scm:git:ssh@github.com:gluehloch/master-pom.git
-    </developerConnection>
     <url>https://github.com/gluehloch/master-pom</url>
-  </scm>
+    <inceptionYear>2014</inceptionYear>
 
-  <repositories>
-    <repository>
-      <id>Maven2-Repository</id>
-      <name>Ibiblio-Repository</name>
-      <url>https://repo.maven.apache.org/maven2/</url>
-    </repository>
-    <repository>
-      <id>Apache-Maven-Repository</id>
-      <name>Apache Maven Repository</name>
-      <url>http://repo1.maven.org/maven2</url>
-    </repository>
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>http://www.apache.org/licenses/</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
 
-    <repository>
-      <id>Hibernate</id>
-      <name>Hibernate JBoss Repository</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public</url>
-    </repository>
-    <repository>
-      <id>jboss</id>
-      <name>JBoss Maven2 repository</name>
-      <url>http://repository.jboss.com/maven2/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-    
-    <!-- AWTools | Gluehloch | Betoffice Repository -->
-    <repository>
-      <id>awtools</id>
-      <name>AWTools Repository</name>
-      <url>https://maven.gluehloch.de/repository</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>awtools-snap</id>
-      <name>AWTools Snapshot Repository</name>
-      <url>https://maven-snap.gluehloch.de/repository</url>
-      <releases>
-        <enabled>false</enabled>
-        <updatePolicy>always</updatePolicy>
-        <checksumPolicy>warn</checksumPolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-        <checksumPolicy>fail</checksumPolicy>
-      </snapshots>
-    </repository>
-  </repositories>
+    <scm>
+        <connection>scm:git:ssh@github.com:gluehloch/master-pom.git</connection>
+        <developerConnection>scm:git:ssh@github.com:gluehloch/master-pom.git</developerConnection>
+        <url>https://github.com/gluehloch/master-pom</url>
+    </scm>
 
-  <!-- =================================================================== -->
-  <!-- Build Configuration -->
-  <!-- =================================================================== -->
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M4</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-scm-plugin</artifactId>
-          <version>1.11.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-assembly-plugin</artifactId>
-          <version>3.3.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-changes-plugin</artifactId>
-          <version>2.12.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-pmd-plugin</artifactId>
-          <version>3.13.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.1.2</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- TODO Ist das noch on vogue? -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jxr-plugin</artifactId>
-          <version>2.5</version>
-          <!-- TODO Die neueste Version
-          <version>3.0</version>
-          -->
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.9.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.2.0</version>
-        </plugin>
-        <!-- TODO Ist das noch on vogue? -->
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-        <!-- TODO Experimental -->
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.6.0.1398</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+    <repositories>
+        <repository>
+            <id>Maven2-Repository</id>
+            <name>Ibiblio-Repository</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+        <repository>
+            <id>Apache-Maven-Repository</id>
+            <name>Apache Maven Repository</name>
+            <url>http://repo1.maven.org/maven2</url>
+        </repository>
 
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <release>10</release>
-          <source>${compiler.version}</source>
-          <target>${compiler.version}</target>
-          <encoding>${compiler.encoding}</encoding>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <configuration>
-          <encoding>${compiler.encoding}</encoding>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <configuration>
-          <goals>install</goals>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-          <descriptorRefs>
-            <descriptorRef>src</descriptorRef>
-          </descriptorRefs>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <encoding>${compiler.encoding}</encoding>
-          <verbose>true</verbose>
-          <minmemory>128m</minmemory>
-          <maxmemory>512</maxmemory>
-          <failOnError>false</failOnError>
-          <failOnWarnings>false</failOnWarnings>
-          <charset>${compiler.encoding}</charset>
-          <docencoding>${compiler.encoding}</docencoding>
-          <additionalJOption>-html5</additionalJOption>
-        </configuration>
-        <!-- TODO Remove me? Disabled auto site generatrion with deployment
-        <executions>
-          <execution>
-            <id>make-assembly</id>
-            <phase>deploy</phase>
-            <goals>
-              <goal>javadoc</goal>
-            </goals>
-          </execution>
-        </executions>
-        -->
-      </plugin>
-      <plugin>
-        <artifactId>maven-site-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>attach-descriptor</id>
-            <goals>
-              <goal>attach-descriptor</goal>
-            </goals>
-          </execution>
-          <!-- TODO Remove me? Disabled auto site generatrion with deployment
-          <execution>
-            <id>make-site</id>
-            <phase>deploy</phase>
-            <goals>
-              <goal>site</goal>
-            </goals>
-          </execution>
-          -->
-        </executions>
-        <configuration>
-          <inputEncoding>${compiler.encoding}</inputEncoding>
-          <outputEncoding>${compiler.encoding}</outputEncoding>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <!-- Currently i do not work behind a proxy. AXIS has some problems if this properties are set, but are empty.
-          <configuration> <systemProperties>
-          <property> <name>http.offline</name> <name>${http.offline}</name> </property>
-          <property> <name>http.proxyActive</name> <value>${http.Active}</value> </property>
-          <property> <name>http.proxyHost</name> <value>${http.proxyHost}</value> </property>
-          <property> <name>http.proxyPort</name> <value>${http.proxyPort}</value> </property>
-          <property> <name>http.proxyUser</name> <value>${http.proxyUser}</value> </property>
-          <property> <name>http.proxyPassword</name> <value>${http.proxyPassword}</value>
-          </property> </systemProperties>
-          </configuration> -->
-      </plugin>
-      <!--
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>cobertura-maven-plugin</artifactId>
-        <configuration>
-          <check>
-            <branchRate>85</branchRate>
-            <lineRate>85</lineRate>
-            <haltOnFailure>false</haltOnFailure>
-            <totalBranchRate>85</totalBranchRate>
-            <totalLineRate>85</totalLineRate>
-            <packageLineRate>85</packageLineRate>
-            <packageBranchRate>85</packageBranchRate>
-          </check>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>clean</goal>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-       -->
-      <!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-site-plugin</artifactId>
-        <executions> <execution> <id>make-site</id> <phase>deploy</phase> <goals>
-        <goal>site</goal> </goals> </execution> </executions> </plugin> -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-deploy-plugin</artifactId>
-      </plugin>
-      <plugin>
-	    <groupId>com.github.danielflower.mavenplugins</groupId>
-	    <artifactId>gitlog-maven-plugin</artifactId>
-	    <version>1.13.17</version>
-	    <configuration>
-	      <simpleHTMLChangeLogFilename>gitlog.html</simpleHTMLChangeLogFilename>
-	    </configuration>
-	    <executions>
-	       <execution>
-	         <goals>
-	           <goal>generate</goal>
-	         </goals>
-	       </execution>
-	    </executions>
-      </plugin>      
-    </plugins>
+        <repository>
+            <id>Hibernate</id>
+            <name>Hibernate JBoss Repository</name>
+            <url>http://repository.jboss.org/nexus/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>jboss</id>
+            <name>JBoss Maven2 repository</name>
+            <url>http://repository.jboss.com/maven2/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
 
-    <extensions>
-        <!--
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-ftp</artifactId>
-        <version>3.2.0</version>
-      </extension>
-      -->
-      <extension>
-        <groupId>org.apache.maven.wagon</groupId>
-        <artifactId>wagon-ssh</artifactId>
-        <version>3.4.1</version>
-      </extension>
-    </extensions>
-  </build>
+        <!-- AWTools | Gluehloch | Betoffice Repository -->
+        <repository>
+            <id>awtools</id>
+            <name>AWTools Repository</name>
+            <url>https://maven.gluehloch.de/repository</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>awtools-snap</id>
+            <name>AWTools Snapshot Repository</name>
+            <url>https://maven-snap.gluehloch.de/repository</url>
+            <releases>
+                <enabled>false</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 
-  <!-- =================================================================== -->
-  <!-- Report Configuration -->
-  <!-- =================================================================== -->
-  <reporting>
-    <plugins>
-      <!-- Subsituted with gitlog
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changelog-plugin</artifactId>
-      </plugin>
-      -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>com.github.danielflower.mavenplugins</groupId>
-        <artifactId>gitlog-maven-plugin</artifactId>
-        <version>1.13.17</version>
-        <configuration>
-          <simpleHTMLChangeLogFilename>gitlog.html</simpleHTMLChangeLogFilename>
-        </configuration>
-      </plugin>      
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.1.0</version>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>dependencies</report>
-              <report>team</report>
-              <report>mailing-lists</report>
-              <report>ci-management</report>
-              <report>issue-management</report>
-              <report>licenses</report>
-              <report>scm</report>              
-              <report>summary</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.0.0-M4</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>2.5</version>
-        <!-- TODO Neueste Version 3.0 -->
-        <configuration>
-          <inputEncoding>${compiler.encoding}</inputEncoding>
-          <outputEncoding>${compiler.encoding}</outputEncoding>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <minmemory>128m</minmemory>
-          <maxmemory>512</maxmemory>
-          <failOnError>false</failOnError>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jdepend-maven-plugin</artifactId>
-        <version>2.0</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>changes-report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <configuration>
-          <connectionType>connection</connectionType>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-pmd-plugin</artifactId>
-        <configuration>
-          <linkXref>true</linkXref>
-          <sourceEncoding>${compiler.encoding}</sourceEncoding>
-          <minimumTokens>100</minimumTokens>
-          <targetJdk>${compiler.version}</targetJdk>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
+    <!-- =================================================================== -->
+    <!-- Build Configuration -->
+    <!-- =================================================================== -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.11.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-changes-plugin</artifactId>
+                    <version>2.12.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-pmd-plugin</artifactId>
+                    <version>3.13.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- TODO Ist das noch on vogue? -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jxr-plugin</artifactId>
+                    <version>2.5</version>
+                    <!-- TODO Die neueste Version <version>3.0</version> -->
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.9.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <!-- TODO Ist das noch on vogue? -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <!-- TODO Experimental -->
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.6.0.1398</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
 
-  <developers>
-    <developer>
-      <id>andrewinkler</id>
-      <name>Andre</name>
-      <email>andre.winkler@web.de</email>
-      <url>https://andre-winkler.de</url>
-      <organization>AWTools</organization>
-      <organizationUrl>https://www.andre-winkler.de</organizationUrl>
-      <roles>
-        <role>developer</role>
-      </roles>
-    </developer>
-  </developers>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <release>10</release>
+                    <source>${compiler.version}</source>
+                    <target>${compiler.version}</target>
+                    <encoding>${compiler.encoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>${compiler.encoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>src</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <encoding>${compiler.encoding}</encoding>
+                    <verbose>true</verbose>
+                    <minmemory>128m</minmemory>
+                    <maxmemory>512</maxmemory>
+                    <failOnError>false</failOnError>
+                    <failOnWarnings>false</failOnWarnings>
+                    <charset>${compiler.encoding}</charset>
+                    <docencoding>${compiler.encoding}</docencoding>
+                    <additionalJOption>-html5</additionalJOption>
+                </configuration>
+                <!-- TODO Remove me? Disabled auto site generatrion with 
+                    deployment <executions> <execution> <id>make-assembly</id> <phase>deploy</phase> 
+                    <goals> <goal>javadoc</goal> </goals> </execution> </executions> -->
+            </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-descriptor</id>
+                        <goals>
+                            <goal>attach-descriptor</goal>
+                        </goals>
+                    </execution>
+                    <!-- TODO Remove me? Disabled auto site generatrion with 
+                        deployment <execution> <id>make-site</id> <phase>deploy</phase> <goals> <goal>site</goal> 
+                        </goals> </execution> -->
+                </executions>
+                <configuration>
+                    <inputEncoding>${compiler.encoding}</inputEncoding>
+                    <outputEncoding>${compiler.encoding}</outputEncoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!-- Currently i do not work behind a proxy. AXIS has some 
+                    problems if this properties are set, but are empty. <configuration> <systemProperties> 
+                    <property> <name>http.offline</name> <name>${http.offline}</name> </property> 
+                    <property> <name>http.proxyActive</name> <value>${http.Active}</value> </property> 
+                    <property> <name>http.proxyHost</name> <value>${http.proxyHost}</value> </property> 
+                    <property> <name>http.proxyPort</name> <value>${http.proxyPort}</value> </property> 
+                    <property> <name>http.proxyUser</name> <value>${http.proxyUser}</value> </property> 
+                    <property> <name>http.proxyPassword</name> <value>${http.proxyPassword}</value> 
+                    </property> </systemProperties> </configuration> -->
+            </plugin>
+            <!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>cobertura-maven-plugin</artifactId> 
+                <configuration> <check> <branchRate>85</branchRate> <lineRate>85</lineRate> 
+                <haltOnFailure>false</haltOnFailure> <totalBranchRate>85</totalBranchRate> 
+                <totalLineRate>85</totalLineRate> <packageLineRate>85</packageLineRate> <packageBranchRate>85</packageBranchRate> 
+                </check> </configuration> <executions> <execution> <goals> <goal>clean</goal> 
+                <goal>check</goal> </goals> </execution> </executions> </plugin> -->
+            <!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-site-plugin</artifactId> 
+                <executions> <execution> <id>make-site</id> <phase>deploy</phase> <goals> 
+                <goal>site</goal> </goals> </execution> </executions> </plugin> -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.github.danielflower.mavenplugins</groupId>
+                <artifactId>gitlog-maven-plugin</artifactId>
+                <version>1.13.17</version>
+                <configuration>
+                    <simpleHTMLChangeLogFilename>gitlog.html</simpleHTMLChangeLogFilename>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
 
-  <distributionManagement>
-    <repository>
-      <id>gluehloch-repository</id>
-      <name>Gluehloch AWTools Repository</name>
-      <url>scp://maven.gluehloch.de/var/www/maven.gluehloch/repository</url>
-    </repository>
-    <snapshotRepository>
-      <id>gluehloch-repository-snap</id>
-      <name>Gluehloch Snapshot Repository</name>
-      <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
-    </snapshotRepository>
-    <site>
-      <id>gluehloch-repository</id>
-      <url>scp://maven.gluehloch.de/var/www/projects.gluehloch/pom/master-pom</url>
-    </site>
-  </distributionManagement>
+        <extensions>
+            <!-- <extension> <groupId>org.apache.maven.wagon</groupId> <artifactId>wagon-ftp</artifactId> 
+                <version>3.2.0</version> </extension> -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>3.4.1</version>
+            </extension>
+        </extensions>
+    </build>
 
-  <properties>
-    <!-- Den Eintrag 'project.build.sourceEncoding' NICHT loeschen. Er wird irgendwo verwendet!? -->
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <compiler.encoding>UTF-8</compiler.encoding>
-    <compiler.version>14</compiler.version>
-  </properties>
+    <!-- =================================================================== -->
+    <!-- Report Configuration -->
+    <!-- =================================================================== -->
+    <reporting>
+        <plugins>
+            <!-- Subsituted with gitlog <plugin> <groupId>org.apache.maven.plugins</groupId> 
+                <artifactId>maven-changelog-plugin</artifactId> </plugin> -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.github.danielflower.mavenplugins</groupId>
+                <artifactId>gitlog-maven-plugin</artifactId>
+                <version>1.13.17</version>
+                <configuration>
+                    <simpleHTMLChangeLogFilename>gitlog.html</simpleHTMLChangeLogFilename>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.1.0</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>dependencies</report>
+                            <report>team</report>
+                            <report>mailing-lists</report>
+                            <report>ci-management</report>
+                            <report>issue-management</report>
+                            <report>licenses</report>
+                            <report>scm</report>
+                            <report>summary</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.0.0-M4</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.5</version>
+                <!-- TODO Neueste Version 3.0 -->
+                <configuration>
+                    <inputEncoding>${compiler.encoding}</inputEncoding>
+                    <outputEncoding>${compiler.encoding}</outputEncoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <minmemory>128m</minmemory>
+                    <maxmemory>512</maxmemory>
+                    <failOnError>false</failOnError>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changes-plugin</artifactId>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>changes-report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <configuration>
+                    <connectionType>connection</connectionType>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <configuration>
+                    <linkXref>true</linkXref>
+                    <sourceEncoding>${compiler.encoding}</sourceEncoding>
+                    <minimumTokens>100</minimumTokens>
+                    <targetJdk>${compiler.version}</targetJdk>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <developers>
+        <developer>
+            <id>andrewinkler</id>
+            <name>Andre</name>
+            <email>andre.winkler@web.de</email>
+            <url>https://andre-winkler.de</url>
+            <organization>AWTools</organization>
+            <organizationUrl>https://www.andre-winkler.de</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>gluehloch-repository</id>
+            <name>Gluehloch AWTools Repository</name>
+            <url>scp://maven.gluehloch.de/var/www/maven.gluehloch/repository</url>
+        </repository>
+        <snapshotRepository>
+            <id>gluehloch-repository-snap</id>
+            <name>Gluehloch Snapshot Repository</name>
+            <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
+        </snapshotRepository>
+        <site>
+            <id>gluehloch-repository</id>
+            <url>scp://maven.gluehloch.de/var/www/projects.gluehloch/pom/master-pom</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <!-- Den Eintrag 'project.build.sourceEncoding' NICHT loeschen. Er 
+            wird irgendwo verwendet!? -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <compiler.encoding>UTF-8</compiler.encoding>
+        <compiler.version>14</compiler.version>
+    </properties>
 
 </project>
