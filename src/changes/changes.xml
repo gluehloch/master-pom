@@ -13,6 +13,7 @@
             </action>
 		</release>
 
+        <!-- Released -->
 		<release version="awtools master pom 8-java11"
 			date="2019-03-22" description="JDK 11">
             <action dev="andrewinkler" type="update" date="2019-02-15">
@@ -20,6 +21,7 @@
             </action>
 		</release>
 
+        <!-- Released -->
 		<release version="awtools master pom 7-java11"
 			date="2019-03-22" description="JDK 11">
             <action dev="andrewinkler" type="update" date="2019-02-15">
