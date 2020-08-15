@@ -5,9 +5,9 @@
 		<author email="andre.winkler@web.de">Andre Winkler</author>
 	</properties>
 	<body>
-		<!-- Under construction -->
+		<!-- Released -->
 		<release version="awtools master pom 9-java14"
-			date="2020-05-30" description="JDK 14">
+			date="2020-08-15" description="JDK 14">
             <action dev="andrewinkler" type="update" date="2020-05-30">
                 Some updates. And moving to JDK 14.
             </action>
