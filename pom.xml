@@ -7,7 +7,7 @@
 
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>9-java14</version>
+    <version>10-java15</version>
     <name>AWTools master POM</name>
     <packaging>pom</packaging>
 
@@ -110,7 +110,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M4</version>
+                    <version>3.0.0-M5</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -125,7 +125,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.2.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -135,7 +135,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.13.0</version>
+                    <version>3.14.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -145,19 +145,18 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
-                    <version>3.1.0</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <!-- TODO Ist das noch on vogue? -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jxr-plugin</artifactId>
-                    <version>2.5</version>
-                    <!-- TODO Die neueste Version <version>3.0</version> -->
+                    <version>3.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.9.0</version>
+                    <version>3.9.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -168,13 +167,10 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
+                    <!--
                     <version>2.8.2</version>
-                </plugin>
-                <!-- TODO Experimental -->
-                <plugin>
-                    <groupId>org.sonarsource.scanner.maven</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>3.6.0.1398</version>
+                    -->
+                    <version>3.0.0-M1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -184,7 +180,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <release>14</release>
+                    <release>15</release>
                     <source>${compiler.version}</source>
                     <target>${compiler.version}</target>
                     <encoding>${compiler.encoding}</encoding>
@@ -251,25 +247,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <!-- Currently i do not work behind a proxy. AXIS has some 
-                    problems if this properties are set, but are empty. <configuration> <systemProperties> 
-                    <property> <name>http.offline</name> <name>${http.offline}</name> </property> 
-                    <property> <name>http.proxyActive</name> <value>${http.Active}</value> </property> 
-                    <property> <name>http.proxyHost</name> <value>${http.proxyHost}</value> </property> 
-                    <property> <name>http.proxyPort</name> <value>${http.proxyPort}</value> </property> 
-                    <property> <name>http.proxyUser</name> <value>${http.proxyUser}</value> </property> 
-                    <property> <name>http.proxyPassword</name> <value>${http.proxyPassword}</value> 
-                    </property> </systemProperties> </configuration> -->
             </plugin>
-            <!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>cobertura-maven-plugin</artifactId> 
-                <configuration> <check> <branchRate>85</branchRate> <lineRate>85</lineRate> 
-                <haltOnFailure>false</haltOnFailure> <totalBranchRate>85</totalBranchRate> 
-                <totalLineRate>85</totalLineRate> <packageLineRate>85</packageLineRate> <packageBranchRate>85</packageBranchRate> 
-                </check> </configuration> <executions> <execution> <goals> <goal>clean</goal> 
-                <goal>check</goal> </goals> </execution> </executions> </plugin> -->
-            <!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-site-plugin</artifactId> 
-                <executions> <execution> <id>make-site</id> <phase>deploy</phase> <goals> 
-                <goal>site</goal> </goals> </execution> </executions> </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -297,7 +275,7 @@
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
                 <artifactId>wagon-ssh</artifactId>
-                <version>3.4.1</version>
+                <version>3.4.2</version>
             </extension>
         </extensions>
     </build>
@@ -343,13 +321,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>3.0.0-M5</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.5</version>
-                <!-- TODO Neueste Version 3.0 -->
+                <version>3.0</version>
                 <configuration>
                     <inputEncoding>${compiler.encoding}</inputEncoding>
                     <outputEncoding>${compiler.encoding}</outputEncoding>
@@ -436,7 +413,7 @@
             wird irgendwo verwendet!? -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <compiler.encoding>UTF-8</compiler.encoding>
-        <compiler.version>14</compiler.version>
+        <compiler.version>15</compiler.version>
     </properties>
 
 </project>
