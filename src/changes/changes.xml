@@ -5,6 +5,13 @@
 		<author email="andre.winkler@web.de">Andre Winkler</author>
 	</properties>
 	<body>
+	    <!-- Under construction -->
+		<release version="awtools master pom 11-java15" date="2021-02-11" dscription"enforcer plugin">
+			<action dev="andrewinkler" type="update" date="2021-02-11">
+				Added Maven Enforce plguin. Minimun Java 10 and Maven 3.6.0.
+			</action>
+		</release>
+
         <!-- Released -->
         <release version="awtools master pom 10-java15"
             date="2020-08-15" description="JDK 15">
