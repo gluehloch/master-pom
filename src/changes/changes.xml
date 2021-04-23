@@ -6,7 +6,9 @@
 	</properties>
 	<body>
 	    <!-- Under construction -->
-		<release version="awtools master pom 11-java15" date="2021-02-11" dscription"enforcer plugin">
+
+		<!-- Released -->
+		<release version="awtools master pom 11-java15" date="2021-04-23" dscription"enforcer plugin">
 			<action dev="andrewinkler" type="update" date="2021-02-11">
 				Added Maven Enforce plguin. Minimun Java 10 and Maven 3.6.0.
 			</action>
