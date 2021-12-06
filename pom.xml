@@ -7,7 +7,7 @@
 
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>12-java16</version>
+    <version>13-java16</version>
     <name>AWTools master POM</name>
     <packaging>pom</packaging>
 
@@ -145,7 +145,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.14.0</version>
+                    <version>3.15.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -161,7 +161,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jxr-plugin</artifactId>
-                    <version>3.0</version>
+                    <version>3.1.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -370,7 +370,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>3.0</version>
                 <configuration>
                     <inputEncoding>${compiler.encoding}</inputEncoding>
                     <outputEncoding>${compiler.encoding}</outputEncoding>
