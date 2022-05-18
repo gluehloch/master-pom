@@ -9,4 +9,4 @@ The master POM without dependencies. Only Maven plugins and repo
 And now build by TRAVIS.
 
 JUST DO IT!
-
+This is just a GIT test.
