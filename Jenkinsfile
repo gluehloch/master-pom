@@ -1,9 +1,11 @@
 pipeline {
     agent any
+    /*
     tools { 
         maven 'MAVEN_3.6.0' 
-        jdk 'jdk11' 
+        jdk 'jdk21'
     }
+    */
     
     /*
     agent {
