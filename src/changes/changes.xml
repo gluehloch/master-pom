@@ -8,6 +8,13 @@
         <!-- Under construction -->
 
         <!-- Released -->
+        <release version="awtools master pom 15-java21" date="2025-03-02" description="JDK 21">
+            <action dev="andrewinkler" type="update" date="2025-03-02">
+                JDK 21. Maven-Compiler-Plugin update 3.14.0. -parameters and debug on.
+            </action>
+        </release>
+
+        <!-- Released -->
         <release version="awtools master pom 12-java16" date="2021-04-24" description="JDK 16">
             <action dev="andrewinkler" type="update" date="2021-04-24">
                 JDK 16.
