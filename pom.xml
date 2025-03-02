@@ -187,7 +187,7 @@
         </pluginManagement>
 
         <plugins>
-              <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>3.4.1</version>
@@ -198,33 +198,59 @@
                             <goal>enforce</goal>
                         </goals>
                         <configuration>
-                        <rules>
-                            <bannedPlugins>
-                                <level>WARN</level>
-                                <excludes>
-                                    <exclude>org.apache.maven.plugins:maven-verifier-plugin</exclude>
-                                </excludes>
-                                <message>Please consider using the maven-invoker-plugin (http://maven.apache.org/plugins/maven-invoker-plugin/)!</message>
-                            </bannedPlugins>
-                            <requireMavenVersion>
-                                <version>3.6.0</version>
-                            </requireMavenVersion>
-                            <requireJavaVersion>
-                                <version>21</version>
-                            </requireJavaVersion>
-                            <!--
+                            <rules>
+                                <bannedPlugins>
+                                    <level>WARN</level>
+                                    <excludes>
+                                        <exclude>
+                                            org.apache.maven.plugins:maven-verifier-plugin</exclude>
+                                    </excludes>
+                                    <message>
+                                        Please consider using the
+                                        maven-invoker-plugin
+                                        (http://maven.apache.org/plugins/maven-invoker-plugin/)!</message>
+                                </bannedPlugins>
+                                <requireMavenVersion>
+                                    <version>3.6.0</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <version>21</version>
+                                </requireJavaVersion>
+                                <!--
                             <requireOS>
                                 <family>unix</family>
                             </requireOS>
                             -->
-                        </rules>
+                            </rules>
                         </configuration>
                     </execution>
                 </executions>
-                </plugin>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+                            <parameters>true</parameters>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                            <parameters>true</parameters>
+                        </configuration>
+                    </execution>
+                </executions>
                 <configuration>
                     <release>21</release>
                     <source>${compiler.version}</source>
@@ -271,7 +297,8 @@
                     <additionalJOption>-html5</additionalJOption>
                 </configuration>
                 <!-- TODO Remove me? Disabled auto site generatrion with 
-                    deployment <executions> <execution> <id>make-assembly</id> <phase>deploy</phase> 
+                    deployment <executions> <execution> <id>make-assembly</id>
+                <phase>deploy</phase> 
                     <goals> <goal>javadoc</goal> </goals> </execution> </executions> -->
             </plugin>
             <plugin>
@@ -284,7 +311,8 @@
                         </goals>
                     </execution>
                     <!-- TODO Remove me? Disabled auto site generatrion with 
-                        deployment <execution> <id>make-site</id> <phase>deploy</phase> <goals> <goal>site</goal> 
+                        deployment <execution> <id>make-site</id> <phase>deploy</phase> <goals>
+                    <goal>site</goal> 
                         </goals> </execution> -->
                 </executions>
                 <configuration>
@@ -318,7 +346,8 @@
         </plugins>
 
         <extensions>
-            <!-- <extension> <groupId>org.apache.maven.wagon</groupId> <artifactId>wagon-ftp</artifactId> 
+            <!-- <extension> <groupId>org.apache.maven.wagon</groupId>
+            <artifactId>wagon-ftp</artifactId> 
                 <version>3.2.0</version> </extension> -->
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -333,7 +362,8 @@
     <!-- =================================================================== -->
     <reporting>
         <plugins>
-            <!-- Subsituted with gitlog <plugin> <groupId>org.apache.maven.plugins</groupId> 
+            <!-- Subsituted with gitlog <plugin>
+            <groupId>org.apache.maven.plugins</groupId> 
                 <artifactId>maven-changelog-plugin</artifactId> </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -445,11 +475,13 @@
         <snapshotRepository>
             <id>gluehloch-repository-snap</id>
             <name>Gluehloch Snapshot Repository</name>
-            <url>scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
+            <url>
+                scp://maven-snap.gluehloch.de/var/www/maven-snap.gluehloch/repository</url>
         </snapshotRepository>
         <site>
             <id>gluehloch-repository</id>
-            <url>scp://maven.gluehloch.de/var/www/projects.gluehloch/pom/master-pom</url>
+            <url>
+                scp://maven.gluehloch.de/var/www/projects.gluehloch/pom/master-pom</url>
         </site>
     </distributionManagement>
 
