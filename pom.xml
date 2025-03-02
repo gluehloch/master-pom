@@ -231,9 +231,7 @@
                     <target>${compiler.version}</target>
                     <encoding>${compiler.encoding}</encoding>
                     <debug>true</debug>
-                    <compilerArgs>
-                    	<arg>-paramerters</arg>
-                    </compilerArgs>
+                    <parameters>true</parameters>
                 </configuration>
             </plugin>
             <plugin>
