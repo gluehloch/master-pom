@@ -5,7 +5,7 @@
 
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>16-java25</version>
+    <version>16-java25-SNAPSHOT</version>
     <name>AWTools master POM</name>
     <packaging>pom</packaging>
 
