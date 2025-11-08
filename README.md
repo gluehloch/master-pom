@@ -4,7 +4,7 @@ master-pom
 The master POM without dependencies. Only Maven plugins and repo
 
  * Encoding: UTF-8
- * Java 21 (JDK 21 compiler and all dependencies like code coverage)
+ * Java 25 (JDK 25 compiler and all dependencies like code coverage)
 
 And now build by TRAVIS.
 
