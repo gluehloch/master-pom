@@ -5,7 +5,7 @@
 
     <groupId>de.awtools</groupId>
     <artifactId>master-pom</artifactId>
-    <version>java-java25</version>
+    <version>16-java25</version>
     <name>AWTools master POM</name>
     <packaging>pom</packaging>
 
@@ -29,7 +29,7 @@
         <connection>scm:git:ssh@github.com:gluehloch/master-pom.git</connection>
         <developerConnection>scm:git:ssh@github.com:gluehloch/master-pom.git</developerConnection>
         <url>https://github.com/gluehloch/master-pom</url>
-      <tag>16-jdk25</tag>
+      <tag>16-java25</tag>
   </scm>
 
     <repositories>
