@@ -6,7 +6,9 @@
     </properties>
     <body>
         <!-- Under construction -->
-        <release version="awtools master pom 16-java25" date="2025-10-12" description="JDK 25">
+
+        <!-- Released -->
+        <release version="awtools master pom 16-java25" date="2025-11-08" description="JDK 25">
             <action dev="andrewinkler" type="update" date="2025-10-12">
                 JDK 25. And several plugin updates...
             </action>
