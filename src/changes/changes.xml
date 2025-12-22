@@ -6,6 +6,11 @@
     </properties>
     <body>
         <!-- Under construction -->
+        <release version="awtools master pom 16.1-java25" date="2025-12-22" description="JDK 25">
+            <action dev="andrewinkler" type="fix" date="2025-12-22">
+                Fix: maven-compiler-configuration: 21 -> 25.
+            </action>
+        </release>
 
         <!-- Released -->
         <release version="awtools master pom 16-java25" date="2025-11-08" description="JDK 25">
